@@ -356,3 +356,52 @@ ModuleNotFoundError: No module named 'pymongo'
 [2024-11-13T05:22:46.062+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:22:46.058+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-11-13T05:22:46.106+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:22:46.106+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:20:00+00:00, run_after=2024-11-13 05:25:00+00:00
 [2024-11-13T05:22:46.133+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 0.957 seconds
+[2024-11-13T05:23:16.635+0000] {processor.py:186} INFO - Started process (PID=419) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:23:16.644+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:23:16.657+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:23:16.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:23:17.309+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:23:17.341+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:23:17.340+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:23:17.360+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:23:17.360+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:20:00+00:00, run_after=2024-11-13 05:25:00+00:00
+[2024-11-13T05:23:17.371+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 0.751 seconds
+[2024-11-13T05:23:47.792+0000] {processor.py:186} INFO - Started process (PID=427) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:23:47.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:23:47.799+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:23:47.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:23:48.620+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:23:48.658+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:23:48.657+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:23:48.676+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:23:48.676+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:20:00+00:00, run_after=2024-11-13 05:25:00+00:00
+[2024-11-13T05:23:48.685+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 0.912 seconds
+[2024-11-13T05:24:19.230+0000] {processor.py:186} INFO - Started process (PID=435) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:24:19.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:24:19.257+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:24:19.256+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:24:19.752+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:24:19.774+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:24:19.773+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:24:19.785+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:24:19.785+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:20:00+00:00, run_after=2024-11-13 05:25:00+00:00
+[2024-11-13T05:24:19.792+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 0.578 seconds
+[2024-11-13T05:24:50.418+0000] {processor.py:186} INFO - Started process (PID=443) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:24:50.421+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:24:50.426+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:24:50.425+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:24:51.069+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:24:51.104+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:24:51.104+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:24:51.118+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:24:51.117+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:20:00+00:00, run_after=2024-11-13 05:25:00+00:00
+[2024-11-13T05:24:51.127+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 0.735 seconds
+[2024-11-13T05:25:21.646+0000] {processor.py:186} INFO - Started process (PID=452) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:25:21.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:25:21.665+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:25:21.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:25:23.223+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:25:23.317+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:25:23.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:25:23.348+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:25:23.348+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:25:00+00:00, run_after=2024-11-13 05:30:00+00:00
+[2024-11-13T05:25:23.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 1.742 seconds
+[2024-11-13T05:25:54.111+0000] {processor.py:186} INFO - Started process (PID=466) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:25:54.114+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:25:54.120+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:25:54.119+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:25:55.052+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:25:55.106+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:25:55.105+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:25:55.125+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:25:55.125+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:25:00+00:00, run_after=2024-11-13 05:30:00+00:00
+[2024-11-13T05:25:55.154+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 1.056 seconds
+[2024-11-13T05:26:25.878+0000] {processor.py:186} INFO - Started process (PID=473) to work on /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:26:25.881+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/email_pipeline_dag.py for tasks to queue
+[2024-11-13T05:26:25.886+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:26:25.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:26:26.625+0000] {processor.py:925} INFO - DAG(s) 'email_pipeline_dag' retrieved from /opt/airflow/dags/email_pipeline_dag.py
+[2024-11-13T05:26:26.662+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:26:26.661+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-13T05:26:26.676+0000] {logging_mixin.py:190} INFO - [2024-11-13T05:26:26.676+0000] {dag.py:4180} INFO - Setting next_dagrun for email_pipeline_dag to 2024-11-13 05:25:00+00:00, run_after=2024-11-13 05:30:00+00:00
+[2024-11-13T05:26:26.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/email_pipeline_dag.py took 0.818 seconds

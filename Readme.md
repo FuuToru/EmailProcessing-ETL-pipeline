@@ -1,3 +1,7 @@
+Here's a README file based on your content:
+
+---
+
 # Email Processing Pipeline
 
 This project is designed to process and store email data using MongoDB and PostgreSQL within an Airflow pipeline.
@@ -16,4 +20,23 @@ This project is designed to process and store email data using MongoDB and Postg
 To start the application, simply run:
 
 ```bash
-docker-compose up
+docker compose up -d
+```
+
+### Troubleshooting
+
+If you encounter issues with permissions, try the following:
+
+1. Create a `.env` file in the project directory.
+2. Add the following line to the `.env` file:
+
+   ```bash
+   AIRFLOW_UID=50000
+   ```
+
+3. Then re-run the application with:
+
+   ```bash
+   docker compose up -d --build
+   ```
+
