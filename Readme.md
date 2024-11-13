@@ -1,7 +1,3 @@
-Here's a README file based on your content:
-
----
-
 # Email Processing Pipeline
 
 This project is designed to process and store email data using MongoDB and PostgreSQL within an Airflow pipeline.
