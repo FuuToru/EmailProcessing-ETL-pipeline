@@ -16,23 +16,8 @@ This project is designed to process and store email data using MongoDB and Postg
 To start the application, simply run:
 
 ```bash
-docker compose up -d
+docker compose up -d --build
 ```
 
-### Troubleshooting
 
-If you encounter issues with permissions, try the following:
-
-1. Create a `.env` file in the project directory.
-2. Add the following line to the `.env` file:
-
-   ```bash
-   AIRFLOW_UID=50000
-   ```
-
-3. Then re-run the application with:
-
-   ```bash
-   docker compose up -d --build
-   ```
 
