@@ -10,13 +10,14 @@ from email import policy
 from email.parser import BytesParser
 import base64
 
+
 # MongoDB and PostgreSQL connection details
 MONGO_URI = "mongodb://admin:admin@mongodb:27017/"
 POSTGRES_CONN_DETAILS = {
-    "dbname": "airflow",
-    "user": "airflow",
-    "password": "airflow",
-    "host": "postgres",
+    "dbname": "lab9",
+    "user": "lab9",
+    "password": "lab9",
+    "host": "postgres_lab9",
     "port": "5432"
 }
 
@@ -68,7 +69,8 @@ def fetch_and_sample_emails():
     df = pd.read_csv(url)
     
     # Randomly sample 200 emails
-    sample_df = df.sample(n=200)
+    random_seed = int(datetime.now().timestamp())
+    sample_df = df.sample(n=200, random_state=random_seed)
     
     # Connect to MongoDB and save the sampled emails
     client = MongoClient(MONGO_URI)

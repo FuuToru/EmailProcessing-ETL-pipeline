@@ -52,8 +52,8 @@ x-airflow-common: &airflow-common
   # build: .
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres_airflow/airflow
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres_airflow/airflow
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
     AIRFLOW__CORE__FERNET_KEY: ""
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
@@ -79,12 +79,13 @@ x-airflow-common: &airflow-common
   depends_on: &airflow-common-depends-on
     redis:
       condition: service_healthy
-    postgres:
+    postgres_airflow:
       condition: service_healthy
 
 services:
-  postgres:
+  postgres_airflow:
     image: postgres:13
+    container_name: postgres_airflow
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
@@ -97,11 +98,11 @@ services:
       retries: 5
       start_period: 5s
     ports:
-      - "5432:5432"
+      - "5433:5432"
     expose:
       - 5432
     restart: always
-  
+
   mongodb:
     image: mongo:4.0.8
     container_name: mongodb
@@ -114,6 +115,23 @@ services:
       MONDODB_LOG_DIR: /dev/null
     ports:
       - "27017:27017"
+
+  postgres_lab9:
+    image: postgres:13
+    container_name: postgres_lab9
+    environment:
+      POSTGRES_USER: lab9
+      POSTGRES_PASSWORD: lab9
+      POSTGRES_DB: lab9
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "lab9"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    ports:
+      - "5432:5432"
+    expose:
+      - 5432
 
   redis:
     # Redis is limited to 7.2-bookworm due to licencing change
