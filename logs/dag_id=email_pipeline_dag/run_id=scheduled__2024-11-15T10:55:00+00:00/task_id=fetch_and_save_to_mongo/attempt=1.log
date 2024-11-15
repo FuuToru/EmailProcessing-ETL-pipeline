@@ -1,0 +1,20 @@
+[2024-11-15T11:00:03.810+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-15T11:00:03.820+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: email_pipeline_dag.fetch_and_save_to_mongo scheduled__2024-11-15T10:55:00+00:00 [queued]>
+[2024-11-15T11:00:03.823+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: email_pipeline_dag.fetch_and_save_to_mongo scheduled__2024-11-15T10:55:00+00:00 [queued]>
+[2024-11-15T11:00:03.824+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-15T11:00:03.830+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): fetch_and_save_to_mongo> on 2024-11-15 10:55:00+00:00
+[2024-11-15T11:00:03.837+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=111) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-15T11:00:03.838+0000] {standard_task_runner.py:72} INFO - Started process 113 to run task
+[2024-11-15T11:00:03.839+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'email_pipeline_dag', 'fetch_and_save_to_mongo', 'scheduled__2024-11-15T10:55:00+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/email_pipeline_dag.py', '--cfg-path', '/tmp/tmpj8olthnp']
+[2024-11-15T11:00:03.842+0000] {standard_task_runner.py:105} INFO - Job 28: Subtask fetch_and_save_to_mongo
+[2024-11-15T11:00:03.881+0000] {task_command.py:467} INFO - Running <TaskInstance: email_pipeline_dag.fetch_and_save_to_mongo scheduled__2024-11-15T10:55:00+00:00 [running]> on host d470bb7e80e6
+[2024-11-15T11:00:03.951+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='email_pipeline_dag' AIRFLOW_CTX_TASK_ID='fetch_and_save_to_mongo' AIRFLOW_CTX_EXECUTION_DATE='2024-11-15T10:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-15T10:55:00+00:00'
+[2024-11-15T11:00:03.953+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-15T11:00:06.913+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-15T11:00:06.932+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-15T11:00:06.933+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=email_pipeline_dag, task_id=fetch_and_save_to_mongo, run_id=scheduled__2024-11-15T10:55:00+00:00, execution_date=20241115T105500, start_date=20241115T110003, end_date=20241115T110006
+[2024-11-15T11:00:06.966+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-15T11:00:07.074+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-15T11:00:07.078+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

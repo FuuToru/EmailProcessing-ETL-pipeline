@@ -19,5 +19,7 @@ To start the application, simply run:
 docker compose up -d --build
 ```
 
+## Connect with Me
+Feel free to reach out for any inquiries or collaboration opportunities:
 
-
+📧 Email: huutri231103@gmail.com
